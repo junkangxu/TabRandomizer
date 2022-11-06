@@ -8,10 +8,6 @@
         "32": "images/random_32px.png",
         "64": "images/random_64px.png"
     },
-    "action": {
-        "default_popup": "popup/popup.html",
-        "default_icon": "images/random_16px.png"
-    },
     "permissions": [
         "tabs",
         "activeTab"
@@ -19,5 +15,9 @@
     "host_permissions": [
         "http://*/*",
         "https://*/*"
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {}
 }
